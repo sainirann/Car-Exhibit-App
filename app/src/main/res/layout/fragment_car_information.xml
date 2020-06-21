@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img_2"
+    tools:context=".CarInformation">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textview_design">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/make_model_layout"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/display_name_info"
+                        android:fontFamily="@font/adamina"
+                        android:text="@string/make_of_vehicle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/display_make"
+                        android:background="@drawable/textview_design"
+                        style="@style/display_style_2"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/display_name_info"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/adamina"
+                        android:text="@string/model_of_vehicle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/display_model"
+                        android:background="@drawable/textview_design"
+                        style="@style/display_style_2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/price_vin_layout"
+                android:layout_marginTop="50dp"
+                android:layout_below="@id/make_model_layout"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/display_name_info"
+                        android:fontFamily="@font/adamina"
+                        android:text="@string/price_of_vehicle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                    <TextView
+                        android:id="@+id/display_car_price"
+                        android:background="@drawable/textview_design"
+                        style="@style/display_style_2"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/display_name_info"
+                        android:fontFamily="@font/adamina"
+                        android:text="@string/vin_number_of_vehicle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/display_vin_number"
+                        android:background="@drawable/textview_design"
+                        style="@style/display_style_2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/price_vin_layout"
+                android:id="@+id/desc_img_layout"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/display_name_info"
+                        android:fontFamily="@font/adamina"
+                        android:text="@string/car_details_of_vehicle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                    <TextView
+                        android:id="@+id/display_desc"
+                        android:width="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_design"
+                        style="@style/display_style_2"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/display_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/image_not_found" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/desc_img_layout"
+                android:id="@+id/color_id_milage_layout"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/display_name_info"
+                        android:fontFamily="@font/adamina"
+                        android:text="@string/color_of_vehicle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                    <TextView
+                        android:id="@+id/display_color"
+                        android:background="@drawable/textview_design"
+                        style="@style/display_style_2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/display_name_info"
+                        android:fontFamily="@font/adamina"
+                        android:text="@string/car_id_of_vehicle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/display_car_id"
+                        android:background="@drawable/textview_design"
+                        style="@style/display_style_2"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/display_name_info"
+                        android:fontFamily="@font/adamina"
+                        android:text="@string/milage_of_vehicle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/display_milage"
+                        android:background="@drawable/textview_design"
+                        style="@style/display_style_2"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/last_update_date_layout"
+                android:layout_marginTop="50dp"
+                android:layout_below="@id/color_id_milage_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/display_name_info"
+                    android:fontFamily="@font/adamina"
+                    android:text="@string/last_updated_date_of_vehicle"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                <TextView
+                    android:id="@+id/last_update_date"
+                    android:background="@drawable/textview_design"
+                    style="@style/display_style_2"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

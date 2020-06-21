@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/open_road_at_sunset"
+    tools:context=".CarCategory">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/make_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/adamina"
+                    style="design_category"
+                    android:padding="5dp"
+                    android:text="Make"
+                    android:textColor="#FDF9F9" />
+
+                <Spinner
+                    android:id="@+id/spinner_make"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:popupBackground="#8c212226"
+                    android:background="@drawable/spinner_design"
+                    android:fontFamily="@font/adamina"/>
+
+                <TextView
+                    android:id="@+id/model_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/adamina"
+                    style="design_category"
+                    android:padding="5dp"
+                    android:text="Model"
+                    android:textColor="#FDF9F9" />
+
+                <Spinner
+                    android:id="@+id/spinner_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/adamina"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:popupBackground="#8c212226"
+                    android:background="@drawable/spinner_design"/>
+<!--          android:popupBackground="#8c212226"-->
+
+          <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/vehicle_based_on_make_model"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="15dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/recycler_design"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="35dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>

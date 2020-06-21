@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CarDetailsApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_invitation">Welcome</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="make_of_vehicle">Make</string>
+    <string name="model_of_vehicle">Model</string>
+    <string name="price_of_vehicle">Price</string>
+    <string name="vin_number_of_vehicle">VIN Number</string>
+    <string name="car_details_of_vehicle">Car Details</string>
+    <string name="color_of_vehicle">Color</string>
+    <string name="car_id_of_vehicle">Car ID</string>
+    <string name="milage_of_vehicle">Milage</string>
+    <string name="last_updated_date_of_vehicle">Last Updated Date</string>
+</resources>
